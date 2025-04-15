@@ -27,3 +27,4 @@ opentelemetry-semantic-conventions==0.53b0
 opentelemetry-semantic-conventions-ai==0.4.3
 opentelemetry-util-http==0.53b0
 python-dotenv==1.0.1
+pandas==2.2.2
