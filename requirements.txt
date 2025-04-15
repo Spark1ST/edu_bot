@@ -14,5 +14,16 @@ langchain-text-splitters==0.3.8
 chromadb>=0.5.23  # Python 3.12 support
 pydantic==2.7.4
 agentops==0.4.6
-opentelemetry-instrumentation>0.50b0
+opentelemetry-api==1.32.0
+opentelemetry-exporter-otlp-proto-common==1.32.0
+opentelemetry-exporter-otlp-proto-grpc==1.32.0
+opentelemetry-exporter-otlp-proto-http==1.32.0
+opentelemetry-instrumentation==0.53b0
+opentelemetry-instrumentation-asgi==0.53b0
+opentelemetry-instrumentation-fastapi==0.53b0
+opentelemetry-proto==1.32.0
+opentelemetry-sdk==1.32.0
+opentelemetry-semantic-conventions==0.53b0
+opentelemetry-semantic-conventions-ai==0.4.3
+opentelemetry-util-http==0.53b0
 python-dotenv==1.0.1
