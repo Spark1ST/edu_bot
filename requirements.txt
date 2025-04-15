@@ -1,5 +1,5 @@
 numpy==1.26.4
-agentops==0.4.6  # Remove if not needed
+agentops>=0.4.6  # Remove if not needed
 faiss-cpu==1.10.0
 qdrant-client==1.13.3
 crewai==0.28.2  # Downgraded for compatibility
