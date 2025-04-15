@@ -1,7 +1,7 @@
 numpy==1.26.4
 faiss-cpu==1.10.0
 qdrant-client==1.13.3
-langchain-community==0.0.1
+langchain-communit>=0.0.25
 crewai  # Downgraded for compatibility
 spacy==3.7.4
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.0/en_core_web_sm-3.7.0-py3-none-any.whl
