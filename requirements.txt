@@ -1,5 +1,5 @@
 numpy==1.26.4
-agentops==1.5.4  # Remove if not needed
+agentops
 faiss-cpu==1.10.0
 qdrant-client==1.13.3
 crewai==0.28.2  # Downgraded for compatibility
@@ -11,8 +11,8 @@ google-generativeai==0.8.4
 langchain==0.0.347  # Older stable version
 chromadb==0.4.24  # Python 3.10-compatible
 pydantic==2.6.4
-opentelemetry-instrumentation>=1.32.0
-opentelemetry-api>=1.32.0
-opentelemetry-exporter-otlp-proto-http>=1.32.0
+opentelemetry-instrumentation
+opentelemetry-api
+opentelemetry-exporter-otlp-proto-http
 pysqlite3-binary==0.5.2  # Required for ChromaDB
 python-dotenv==1.0.1
