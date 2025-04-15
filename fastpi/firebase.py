@@ -1,7 +1,7 @@
 import firebase_admin
 from firebase_admin import credentials, firestore, auth
 import streamlit as st
-
+import os
 def initialize_firebase():
     if not firebase_admin._apps:
         firebase_key_str = os.environ["FIREBASE_ADMIN_KEY"]
