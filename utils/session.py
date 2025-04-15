@@ -7,20 +7,35 @@ from datetime import datetime
 from pathlib import Path
 import json
 import os
+import tempfile
 
-# Retrieve the Firebase service account key (as a string) from secrets
+## Get the Firebase Admin key from environment variables
 firebase_key_str = os.environ["FIREBASE_ADMIN_KEY"]
 
 # Parse the JSON string to a dictionary
 try:
     firebase_key_dict = json.loads(firebase_key_str)
 except json.JSONDecodeError as e:
-    st.error(f"Failed to parse Firebase key. Check its format: {e}")
-    st.stop()
+    print(f"Failed to parse Firebase key. Check its format: {e}")
+    exit(1)
 
-# Initialize Firebase Admin SDK using the dictionary directly
-cred = credentials.Certificate(firebase_key_dict)
-firebase_admin.initialize_app(cred)
+# Save the JSON to a temporary file
+with tempfile.NamedTemporaryFile(delete=False, mode='w') as temp_file:
+    json.dump(firebase_key_dict, temp_file)
+    temp_file_path = temp_file.name
+
+# Initialize Firebase Admin SDK using the temporary file
+try:
+    cred = credentials.Certificate(temp_file_path)
+    firebase_admin.initialize_app(cred)
+    print("Firebase initialized successfully")
+except Exception as e:
+    print(f"Failed to initialize Firebase: {e}")
+    exit(1)
+
+# Optionally, clean up the temporary file if not needed anymore
+os.remove(temp_file_path)
+
 db = firestore.client()
 
 def initialize_session_state():
