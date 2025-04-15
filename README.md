@@ -1,1 +1,2 @@
-# edu_bot
+# Educational_Chatbot
+ 

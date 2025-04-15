@@ -1,0 +1,48 @@
+{
+    "id": "python101",
+    "title": "Python Fundamentals",
+    "description": "Learn the basics of Python programming language",
+    "instructor": "Dr. Python",
+    "image_url": "https://ucarecdn.com/aa29bd64-20d5-47eb-878b-928ee201e0b4/",
+    "modules": [
+        {
+            "id": "module1",
+            "title": "Introduction to Python",
+            "content_type": "video",
+            "content": "https://www.youtube.com/embed/x7X9w_GIm1s"
+        },
+        {
+            "id": "module2",
+            "title": "Variables and Data Types",
+            "content_type": "video",
+            "content": "https://www.youtube.com/embed/OH86oLzVzzw"
+        },
+        {
+            "id": "quiz1",
+            "title": "Python Basics Quiz",
+            "content_type": "quiz",
+            "content": [
+                {
+                    "question": "What function is used to print output in Python?",
+                    "options": [
+                        "echo()",
+                        "console.log()",
+                        "print()",
+                        "output()"
+                    ],
+                    "correct": 2
+                },
+                {
+                    "question": "Which of these is NOT a Python data type?",
+                    "options": [
+                        "int",
+                        "boolean",
+                        "list",
+                        "dictionary"
+                    ],
+                    "correct": 1
+                }
+            ]
+        }
+    ]
+}

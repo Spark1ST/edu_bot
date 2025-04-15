@@ -1,0 +1,48 @@
+{
+    "id": "datascience101",
+    "title": "Introduction to Data Science",
+    "description": "Learn the fundamentals of data analysis and visualization",
+    "instructor": "Dr. Data",
+    "image_url": "https://www.itpt.co.uk/wp-content/uploads/2023/05/datascience.png",
+    "modules": [
+        {
+            "id": "module1",
+            "title": "Understanding Data",
+            "content_type": "video",
+            "content": "https://www.youtube.com/embed/ua-CiDNNj30"
+        },
+        {
+            "id": "module2",
+            "title": "Introduction to Pandas",
+            "content_type": "video",
+            "content": "https://www.youtube.com/embed/vmEHCJofslg"
+        },
+        {
+            "id": "quiz1",
+            "title": "Data Science Basics Quiz",
+            "content_type": "quiz",
+            "content": [
+                {
+                    "question": "Which library is NOT commonly used in data science?",
+                    "options": [
+                        "Pandas",
+                        "NumPy",
+                        "React",
+                        "Matplotlib"
+                    ],
+                    "correct": 2
+                },
+                {
+                    "question": "What is the primary purpose of data visualization?",
+                    "options": [
+                        "To make data colorful",
+                        "To identify patterns and insights",
+                        "To store data efficiently",
+                        "To encrypt data"
+                    ],
+                    "correct": 1
+                }
+            ]
+        }
+    ]
+}

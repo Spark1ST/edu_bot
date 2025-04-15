@@ -1,0 +1,48 @@
+{
+    "id": "webdev101",
+    "title": "Web Development Fundamentals",
+    "description": "Learn HTML, CSS and JavaScript basics",
+    "instructor": "Prof. Web",
+    "image_url": "https://miro.medium.com/v2/resize:fit:1200/1*V-Jp13LvtVc2IiY2fp4qYw.jpeg",
+    "modules": [
+        {
+            "id": "module1",
+            "title": "HTML Basics",
+            "content_type": "video",
+            "content": "https://www.youtube.com/embed/qz0aGYrrlhU"
+        },
+        {
+            "id": "module2",
+            "title": "CSS Styling",
+            "content_type": "video",
+            "content": "https://www.youtube.com/embed/yfoY53QXEnI"
+        },
+        {
+            "id": "quiz1",
+            "title": "HTML & CSS Quiz",
+            "content_type": "quiz",
+            "content": [
+                {
+                    "question": "What HTML tag is used for a paragraph?",
+                    "options": [
+                        "<paragraph>",
+                        "<p>",
+                        "<para>",
+                        "<text>"
+                    ],
+                    "correct": 1
+                },
+                {
+                    "question": "Which property is used to change text color in CSS?",
+                    "options": [
+                        "text-color",
+                        "font-color",
+                        "color",
+                        "foreground-color"
+                    ],
+                    "correct": 2
+                }
+            ]
+        }
+    ]
+}
