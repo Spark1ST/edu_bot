@@ -6,7 +6,7 @@ import requests
 from datetime import datetime
 from pathlib import Path
 import json
-
+import os
 
 # Retrieve the Firebase service account key (as a string) from secrets
 firebase_key_str = os.environ["FIREBASE_ADMIN_KEY"]
