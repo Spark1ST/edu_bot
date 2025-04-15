@@ -4,7 +4,7 @@ import streamlit as st
 
 def initialize_firebase():
     if not firebase_admin._apps:
-        firebase_key_str = st.secrets["firebase"]["firebase_admin_key"]
+        firebase_key_str = os.environ["FIREBASE_ADMIN_KEY"]
         
         # Parse the JSON string to a dictionary
         try:
