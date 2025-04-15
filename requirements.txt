@@ -12,3 +12,4 @@ langchain==0.3.23
 chromadb==1.0.4
 #streamlit==1.44.1
 pydantic>=2.0.0
+python-3.12
