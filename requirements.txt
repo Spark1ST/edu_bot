@@ -1,16 +1,17 @@
 numpy==1.26.4
 faiss-cpu==1.10.0
 qdrant-client==1.13.3
-crewai  # Downgraded for compatibility
+crewai>=0.28.4  # Modern version with langchain compatibility
 spacy==3.7.4
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.0/en_core_web_sm-3.7.0-py3-none-any.whl
-sentence-transformers==2.3.1  # Compatible version
+sentence-transformers==2.3.1
 google-generativeai==0.8.4
-langchain
-
-chromadb==0.4.24  # Python 3.10-compatible
+langchain==0.1.16  # Compatible with older deps
+langchain-community==0.0.29  # Matches langchain-0.1.16's requirement
+chromadb==0.4.24
 pydantic==2.6.4
-agentops
+agentops>=0.3.1
 opentelemetry-instrumentation
-pysqlite3-binary==0.5.2  # Required for ChromaDB
+pysqlite3-binary==0.5.2
 python-dotenv==1.0.1
+langchain-core==0.0.32  # Explicit version for compatibility
