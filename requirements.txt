@@ -1,7 +1,13 @@
-streamlit==1.36.0
-pandas==2.2.1
-altair==5.2.0
-firebase_admin==5.2.0
-langchain==0.3.23
+numpy<=2
+agentops==0.4.6
+faiss-cpu==1.10.0  # CPU-only version of FAISS
+qdrant-client>=1.13.3  # Official Qdrant client
 crewai==0.114.0
-pydantic[email]==2.8.1
+langchain-community==0.3.21
+spacy==3.7.5
+sentence_transformers==4.0.2
+google.generativeai==0.8.4
+langchain==0.3.23
+chromadb==1.0.4
+#streamlit==1.44.1
+pydantic>=2.0.0
