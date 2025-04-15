@@ -3,6 +3,7 @@ import json
 import tempfile
 import firebase_admin
 from firebase_admin import credentials, auth, firestore
+import streamlit as st
 
 def initialize_firebase():
     if not firebase_admin._apps:  # Check if Firebase has already been initialized
