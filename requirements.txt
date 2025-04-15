@@ -29,3 +29,4 @@ opentelemetry-util-http==0.53b0
 python-dotenv==1.0.1
 pandas==2.2.2
 hf_xet
+firebase-admin==6.7.0
