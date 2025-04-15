@@ -1,18 +1,18 @@
-numpy==1.26.4  # Downgraded for compatibility
-agentops==0.4.0  # Remove if not critical (may conflict with Python 3.12)
+numpy==1.26.4
+agentops==0.4.6  # Remove if not needed
 faiss-cpu==1.10.0
 qdrant-client==1.13.3
-crewai==0.114.0
-langchain-community==0.3.21
-spacy==3.7.4  # Explicit version
+crewai==0.28.2  # Downgraded for compatibility
+langchain-community==0.0.29
+spacy==3.7.4
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.0/en_core_web_sm-3.7.0-py3-none-any.whl
-sentence-transformers==4.0.2
+sentence-transformers==2.3.1  # Compatible version
 google-generativeai==0.8.4
-langchain==0.3.23
-chromadb==1.0.4
-pydantic==2.6.4  # Pinned to avoid conflicts
-opentelemetry-instrumentation  # Critical fix
-opentelemetry-api
+langchain==0.0.347  # Older stable version
+chromadb==0.4.24  # Python 3.10-compatible
+pydantic==2.6.4
+opentelemetry-instrumentation==0.50b0
+opentelemetry-api==1.32.0
 opentelemetry-exporter-otlp-proto-http==1.32.0
 pysqlite3-binary==0.5.2  # Required for ChromaDB
-python-dotenv==1.0.1  # For environment variables
+python-dotenv==1.0.1
