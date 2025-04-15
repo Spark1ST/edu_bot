@@ -9,7 +9,7 @@ import json
 
 
 # Retrieve the Firebase service account key (as a string) from secrets
-firebase_key_str = st.secrets["firebase"]["firebase_admin_key"]
+firebase_key_str = os.environ["FIREBASE_ADMIN_KEY"]
 
 # Parse the JSON string to a dictionary
 try:
