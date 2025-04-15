@@ -1,6 +1,6 @@
 numpy==1.26.4
 faiss-cpu==1.10.0
-fastapi<=0.95.2
+fastapi==0.115.9
 qdrant-client==1.13.3
 crewai>=0.28.4  # Modern version
 spacy==3.7.4
