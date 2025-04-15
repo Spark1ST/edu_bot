@@ -1,5 +1,5 @@
 numpy==1.26.4  # Downgraded for compatibility
-agentops==0.4.6  # Remove if not critical (may conflict with Python 3.12)
+agentops==0.4.0  # Remove if not critical (may conflict with Python 3.12)
 faiss-cpu==1.10.0
 qdrant-client==1.13.3
 crewai==0.114.0
@@ -11,8 +11,8 @@ google-generativeai==0.8.4
 langchain==0.3.23
 chromadb==1.0.4
 pydantic==2.6.4  # Pinned to avoid conflicts
-opentelemetry-instrumentation==0.50b0  # Critical fix
-opentelemetry-api==1.32.0
+opentelemetry-instrumentation  # Critical fix
+opentelemetry-api
 opentelemetry-exporter-otlp-proto-http==1.32.0
 pysqlite3-binary==0.5.2  # Required for ChromaDB
 python-dotenv==1.0.1  # For environment variables
