@@ -2,15 +2,4 @@ numpy==1.26.4
 faiss-cpu==1.10.0
 fastapi==0.115.9
 qdrant-client==1.13.3
-crewai>=0.28.4  # Modern version
-spacy==3.7.4
-https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.0/en_core_web_sm-3.7.0-py3-none-any.whl
-sentence-transformers==2.3.1
-google-generativeai==0.8.4
-langchain>=0.2.0  # Python 3.12-compatible
-langchain-community>=0.2.0  # Modern version
-chromadb>=0.5.23  # Python 3.12 support
-pydantic==2.6.4
-agentops>=0.3.1
-opentelemetry-instrumentation
-python-dotenv==1.0.1
+
