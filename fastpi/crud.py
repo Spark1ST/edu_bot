@@ -1,6 +1,7 @@
 from datetime import datetime
 from firebase_admin import auth, firestore
 from fastpi.models import UserResponse, CourseResponse
+from firebase_admin import credentials, firestore, auth
 from fastpi.firebase import firebase
 
 db = firebase['db']
