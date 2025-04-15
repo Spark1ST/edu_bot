@@ -1,14 +1,18 @@
-numpy<=2
-agentops==0.4.6
-faiss-cpu==1.10.0  # CPU-only version of FAISS
-qdrant-client>=1.13.3  # Official Qdrant client
+numpy==1.26.4  # Downgraded for compatibility
+agentops==0.4.6  # Remove if not critical (may conflict with Python 3.12)
+faiss-cpu==1.10.0
+qdrant-client==1.13.3
 crewai==0.114.0
 langchain-community==0.3.21
-spacy>=3.7.0
+spacy==3.7.4  # Explicit version
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.0/en_core_web_sm-3.7.0-py3-none-any.whl
-sentence_transformers==4.0.2
-google.generativeai==0.8.4
+sentence-transformers==4.0.2
+google-generativeai==0.8.4
 langchain==0.3.23
 chromadb==1.0.4
-#streamlit==1.44.1
-pydantic>=2.0.0
+pydantic==2.6.4  # Pinned to avoid conflicts
+opentelemetry-instrumentation==0.50b0  # Critical fix
+opentelemetry-api==1.32.0
+opentelemetry-exporter-otlp-proto-http==1.32.0
+pysqlite3-binary==0.5.2  # Required for ChromaDB
+python-dotenv==1.0.1  # For environment variables
