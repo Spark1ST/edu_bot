@@ -13,7 +13,7 @@ def initialize_firebase():
         except json.JSONDecodeError as e:
             st.error(f"Failed to parse Firebase key. Check its format: {e}")
             st.stop()
-        cred = credentials.Certificate(cred_dict)
+        cred = credentials.Certificate(firebase_key_dict)
         
         # Initialize Firebase
         firebase_admin.initialize_app(cred)
